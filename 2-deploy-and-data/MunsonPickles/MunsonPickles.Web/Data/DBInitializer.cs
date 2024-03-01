@@ -10,8 +10,8 @@ public static class DBInitializer
         if (pickleContext.Products.Any())
             return;
 
-        var pickleType = new ProductType { Name = "Pickle" };
-        var preserveType = new ProductType { Name = "Preserves" };
+        var pickleType = new ProductType { Name = "Cake" };
+        var preserveType = new ProductType { Name = "Cookies" };
 
         var dillReview = new Review
         {
@@ -22,8 +22,8 @@ public static class DBInitializer
 
         var dillPickles = new Product
         {
-            Description = "Deliciously dill",
-            Name = "Dill Pickles",
+            Description = "Delicious with Tutti Fruti!",
+            Name = "Cup cakes",
             ProductType = pickleType,
             Reviews = new List<Review> { dillReview }
         };

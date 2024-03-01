@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 
-var sqlConnection = builder.Configuration["ConnectionStrings:SqlDb:DotAzure"];
+var sqlConnection = builder.Configuration["ConnectionStrings:gsnacks:SqlDb"];
 
 builder.Services.AddSqlServer<PickleDbContext>(sqlConnection, options => options.EnableRetryOnFailure());
 
